@@ -1,17 +1,15 @@
 /* eslint-disable no-restricted-syntax */
 /* eslint-disable guard-for-in */
 import axios from 'axios';
-import { CraftingTweak } from '../pages/CraftingTweaks';
-import { Datapack } from '../pages/Datapacks';
 import { Resourcepack } from '../pages/ResourcePacks';
 
 const download = async (
-  selected: { [key: string]: (Datapack | Resourcepack | CraftingTweak)[] },
+  selected: { [key: string]: (Resourcepack)[] },
   type: string,
   version: number,
 ) => {
   const data: {
-    [x: string]: (Datapack | Resourcepack | CraftingTweak | string)[];
+    [x: string]: (Resourcepack| string)[];
   } = { ...selected };
 
   for (const key in selected) {

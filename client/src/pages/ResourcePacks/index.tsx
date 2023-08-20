@@ -87,24 +87,15 @@ function ResourcePack() {
           >
             <div className="flex items-center justify-between mb-8">
               <h1 className="text-2xl text-white tracking-widest drop-shadow-md">
-                Resource Packs
+                Mod Packs
               </h1>
               <VersionSelector
                 version={version}
                 setVersion={setVersion}
-                versionCount={9}
-                versionStart={11}
+                versionCount={1}
+                versionStart={19}
               />
             </div>
-            {version === 19 && (
-              <div className="w-full p-6 bg-[#E94D43] mb-4 rounded-md text-white shadow-md">
-                If you are using 1.19, 1.19.1, or 1.19.2, you can safely ignore
-                the &quot;made for a newer version of Minecraft&quot; warning
-                when applying your resource pack in-game, as it is incorrect.
-                <br />
-                (If you are using 1.19.3, you won&apos;t see this warning.)
-              </div>
-            )}
             <div className="min-w-0 flex-1 overflow-auto flex flex-col gap-2">
               {data.length > 0 ? (
                 data.map((category, index) => (

@@ -8,47 +8,13 @@ function Footer() {
       <span className="sm:hidden">Copyright © Vanilla Tweaks 2021</span>
       <p className="flex items-center gap-2">
         <span className="hidden sm:flex items-center gap-2">
-          Copyright © Vanilla Tweaks 2021
-          <span className="w-1 h-1 bg-[#E99743] hover:bg-[#dd8a38] transition-all inline-block rounded-full" />
+          Copyright © Mod Tweaks 2023
         </span>
-        <Link to="/toc" className="underline decoration-[1.5px]">
-          Terms & Conditions
-        </Link>
-        <span className="w-1 h-1 bg-[#E99743] hover:bg-[#dd8a38] transition-all inline-block rounded-full" />
-        <Link to="/privacy" className="underline decoration-[1.5px]">
-          Privacy Policy
-        </Link>
       </p>
       <p className="flex items-center gap-2">
-        Join and support us on
-        <a
-          href="https://twitter.com/VanillaTweaks"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-[#E99743] transition-all"
-        >
-          <Icon icon="simple-icons:twitter" />
-        </a>
-        <a
-          href="https://discord.com/invite/qG53qwF"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-[#E99743] transition-all"
-        >
-          <Icon icon="simple-icons:discord" />
-        </a>
-        <a
-          href="https://www.patreon.com/vanillatweaks"
-          target="_blank"
-          rel="noreferrer"
-          className="hover:text-[#E99743] transition-all"
-        >
-          <Icon icon="simple-icons:patreon" />
-        </a>
         <span className="hidden sm:flex items-center gap-2">
-          <span className="w-1 h-1 bg-[#E99743] hover:bg-[#dd8a38] transition-all inline-block rounded-full" />
           <Link
-            to="/feedback"
+            to="https://github.com/playgamesgo/ModTweaks/issues"
             className="underline decoration-[1.5px] hover:text-[#E99743] transition-all"
           >
             Send us feedback

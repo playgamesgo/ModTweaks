@@ -3,9 +3,7 @@
 import React from 'react';
 import { Icon } from '@iconify/react';
 import download from '../functions/download';
-import { Datapack } from '../pages/Datapacks';
 import { Resourcepack } from '../pages/ResourcePacks';
-import { CraftingTweak } from '../pages/CraftingTweaks';
 import isIncompatible from '../functions/isIncompatible';
 
 function Selector({
@@ -14,7 +12,7 @@ function Selector({
   display,
   version,
 }: {
-  selected: { [key: string]: (Datapack | Resourcepack | CraftingTweak)[] };
+  selected: { [key: string]: (Resourcepack)[] };
   name: string;
   display: string;
   version: number;

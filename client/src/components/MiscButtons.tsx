@@ -12,18 +12,6 @@ function MiscButtons() {
       >
         How to Install
       </a>
-      <a
-        href="https://patreon.com/vanillatweaks"
-        target="_blank"
-        rel="noreferrer"
-        className="w-full flex bg-[#E94D43] hover:bg-[#d54137] transition-all items-center justify-center text-white rounded-md py-3 relative shadow-md"
-      >
-        <Icon
-          icon="mdi:patreon"
-          className="text-white absolute left-0 top-1/2 -translate-y-1/2 w-6 h-6 ml-3"
-        />
-        Support Us
-      </a>
     </div>
   );
 }

@@ -1,12 +1,10 @@
-import { CraftingTweak } from '../pages/CraftingTweaks';
-import { Datapack } from '../pages/Datapacks';
 import { Resourcepack } from '../pages/ResourcePacks';
 
 const packSelectCallback = (
-  selected: {[key: string]: (Resourcepack | Datapack | CraftingTweak)[]},
+  selected: {[key: string]: (Resourcepack)[]},
   setSelected: (_selected: any) => void,
   category: string,
-  pack: Resourcepack | Datapack | CraftingTweak,
+  pack: Resourcepack,
 ) => {
   if (selected[category]) {
     if (selected[category].filter((e) => e.name === pack.name).length) {
