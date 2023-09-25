@@ -2,8 +2,6 @@
 
 <p align="center">A mod selector based on better looking version of Vanilla Tweaks Website </p>
 
-  
-</div>
 
 ## 🔬 Technologies Used 
 
@@ -19,7 +17,7 @@
 
 If you want to run the website on your local machine:
 1. Clone the repository: `git clone https://github.com/playgamesgo/ModTweaks`
-2. Install all required dependencies for both client and serverside using `npm install`
+2. Install all required dependencies for both client and serverside using `npm install --force --legacy-peer-deps`
 4. Run `npm run dev` on client side
 5. Run `npx index.js` on server side
  

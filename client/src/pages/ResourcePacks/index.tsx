@@ -62,7 +62,7 @@ function ResourcePack() {
     setSelected({});
 
     fetch(
-      `https://cors-anywhere.thecodeblog.net/vanillatweaks.net/assets/resources/json/1.${version}/rpcategories.json`
+      `http://0.0.0.0:5173/assets/resources/json/${version}/rpcategories.json`
     )
       .then((response) => response.json())
       .then((d) => setData(d.categories));
@@ -119,7 +119,7 @@ function ResourcePack() {
               {hover ? (
                 <>
                   <img
-                    src={`https://vanillatweaks.net/assets/resources/icons/resourcepacks/1.${version}/${hover.name}.png`}
+                    src={`http://0.0.0.0:5173/assets/resources/icons/resourcepacks/${version}/${hover.name}.png`}
                     alt={hover.name}
                     className="w-8 h-8 shadow-lg"
                   />
@@ -137,7 +137,7 @@ function ResourcePack() {
             {hover && (
               <img
                 alt=""
-                src={`https://vanillatweaks.net/assets/resources/previews/resourcepacks/1.${version}/${
+                src={`http://0.0.0.0:5173/assets/resources/previews/resourcepacks/${version}/${
                   hover.name
                 }.${hover.previewExtension || "png"}?v2`}
                 className="w-full aspect-video object-contain"

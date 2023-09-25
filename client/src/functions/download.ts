@@ -18,7 +18,7 @@ const download = async (
 
   if (JSON.stringify(selected) !== '{}') {
     const { data: { link, status } } = await axios({
-      url: `http://api.vanillatweaks.thecodeblog.net/download/${type}`,
+      url: `http://0.0.0.0:8080/download/${type}`,
       method: 'POST',
       data: {
         data,

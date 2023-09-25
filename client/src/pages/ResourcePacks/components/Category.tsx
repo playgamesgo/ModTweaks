@@ -52,7 +52,7 @@ function Category({
               Pick all
             </p>
             <img
-              src="https://vanillatweaks.net/assets/images/pickall.png"
+              src="http://0.0.0.0:5173/assets/images/pickall.png"
               alt="pick all"
               className="w-6 h-6 cath"
             />

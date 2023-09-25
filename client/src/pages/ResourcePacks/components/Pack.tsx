@@ -50,7 +50,7 @@ function PackItem({
         />
       )}
       <img
-        src={`https://vanillatweaks.net/assets/resources/icons/resourcepacks/1.${version}/${pack.name}.png?v2`}
+        src={`http://0.0.0.0:5173/assets/resources/icons/resourcepacks/${version}/${pack.name}.png?v2`}
         alt=""
         className="w-20 h-20"
       />
