@@ -6,9 +6,10 @@
 
 If you want to run the website on your local machine:
 1. Clone the repository: `git clone https://github.com/playgamesgo/ModTweaks`
-2. Install all required dependencies for both client and serverside using `npm install --force --legacy-peer-deps`
+2. Install all required dependencies for client side using `npm install --force --legacy-peer-deps`
 3. Run `npm run dev` on client side
-4. Wait until I write the guide for the server side, or figure it out yourself
+4. Run `./gradlew shadowJar` on server side
+5. Run `java -jar build/libs/server-0.0.0-all.jar` on server side
  
 ## 📄 License
 

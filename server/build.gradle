@@ -1,9 +1,14 @@
 plugins {
     id 'java'
+    id 'com.github.johnrengelman.shadow' version '7.1.2'
 }
 
 group = 'me.playgamesgo.modtweaks'
-version = '1.0-SNAPSHOT'
+version = '0.0.0'
+
+tasks.jar {
+    manifest.attributes["Main-Class"] = "me.playgamesgo.modtweaks.Main"
+}
 
 repositories {
     mavenCentral()
@@ -14,9 +19,12 @@ dependencies {
     testImplementation 'org.junit.jupiter:junit-jupiter'
     implementation 'com.sparkjava:spark-core:2.7.2'
     implementation 'com.googlecode.json-simple:json-simple:1.1.1'
-
 }
 
 test {
     useJUnitPlatform()
+}
+
+shadowJar {
+    relocate 'com.sparkjava.spark-core', 'me.playgamesgo.libs.spark'
 }
