@@ -52,10 +52,7 @@ public class Main {
         });
 
         post("/download/*", (req, res) -> {
-            logger.info(req.uri());
-            logger.info(req.body());
-            new PackGenerator(req.body());
-            return null;
+            return PackGenerator.packGenerator(req.body());
         });
 
 

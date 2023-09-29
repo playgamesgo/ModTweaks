@@ -16,6 +16,8 @@ const download = async (
     data[key] = selected[key].map((e) => e.name);
   }
 
+  alert("Please wait while we prepare your download... This may take a while")
+
   if (JSON.stringify(selected) !== '{}') {
     const { data: { link, status } } = await axios({
       url: `http://0.0.0.0:8080/download/${type}`,
@@ -27,7 +29,7 @@ const download = async (
     });
     if (status === 'success') {
       const a = document.createElement('a');
-      a.href = `https://vanillatweaks.net${link}`;
+      a.href = `http://0.0.0.0:5173${link}`;
       a.download = link.split('/').pop();
       a.click();
     }

@@ -48,7 +48,7 @@ function Selector({
                       className="w-6 h-6 flex-shrink-0"
                     />
                     <img
-                      src={`https://vanillatweaks.net/assets/resources/icons/${name}/1.${version}/${pack.name}.png`}
+                      src={`http://0.0.0.0:5173/assets/resources/icons/${name}/${version}/${pack.name}.png`}
                       alt={pack.name}
                       className="w-5 h-5"
                     />
